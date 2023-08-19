@@ -11,7 +11,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
     height: 100%;
 
 }
@@ -48,7 +48,8 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 30px 20px 40px 20px;
+    padding: 50px;
+    gap: 15px;
 }
 
 .projects {
@@ -62,12 +63,65 @@
 
 .card {
     background-color: #f8f8f8;
-    padding: 30px 0 20px 15px;
+    padding: 0px;
     border-left: 10px solid orange;
     border-radius: 10px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    display:grid;
+    padding: 30px;
+    grid-template: 1fr;
+    grid-template-rows: 3fr 1fr;
+    box-shadow: 2px 2px 5px grey;
 }
 
 .trending {
     grid-column: 2 / 3;
+}
+
+.card-icon {
+    width:40px;
+    height:40px;
+    float: right;
+}
+
+.card-icons-container img{
+   margin: 5px 15px;
+}
+
+.announce {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    font-family: "Roboto";
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.bottom-border {
+    border-bottom: 1px solid grey;
+    
+}
+
+.trending-card {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.trend-info img {
+    width:50px;
+    height:50px;
+}
+
+.trend-info {
+    display:flex;
+    padding: 5px;
 }
